@@ -1,36 +1,30 @@
 import os
-# Limpa o terminal
 os.system("cls")
 
-# Abre o arquivo e o transforma em uma unica string
 
-
-def le_arquivo(arquivo: str) -> str:
-    with open(arquivo, "r") as numeros:
-        return numeros.read()
+def read_file(file: str) -> str:
+    with open(file, "r") as numbers:
+        return numbers.read()
 
 # Pega a string e a tranforma em uma lista, dividindo por ',' onde será separado
 # e passando cada item da lista pra int
 
 
-def cria_lista(string: str) -> list:
-    lista_str = string.split(',')
-    lista_int = [int(i) for i in lista_str]
-    return lista_int
-
-# Soma cada item impar da lista e retorna essa soma
+def create_list(string: str) -> list:
+    str_list = string.split(',')
+    str_list = [int(i) for i in str_list]
+    return str_list
 
 
-def soma_impares(numeros: list) -> int:
-    soma = 0
-    for i in numeros:
+def sum_odds(numbers: list) -> int:
+    sum = 0
+    for i in numbers:
         if i % 2 != 0:
-            soma += i
-    return soma
+            sum += i
+    return sum
 
 
-# Main (chama as funções)
-arq_string = le_arquivo("numeros.csv")
-lista_numeros = cria_lista(arq_string)
-result = soma_impares(lista_numeros)
+file_string = read_file("numeros.csv")
+numbers_list = create_list(file_string)
+result = sum_odds(numbers_list)
 print(f"A soma dos números ímpares do arquivo é {result}")
