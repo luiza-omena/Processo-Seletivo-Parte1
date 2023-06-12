@@ -18,7 +18,9 @@ As 3 questões completas, exibindo o resultado esperado no terminal.
 ## Funcionalidades
 
 Questão 1 - Encontrar o maior número em uma lista de 20 números inteiros aleatórios no intervalo de 1 a 100.
+
 Questão 2 - Verificar se uma palavra fornecida pelo usuário é um palíndromo.
+
 Questão 3 - Ler um arquivo chamado "numeros.csv" contendo números inteiros separados por vírgulas e retornar a soma dos números ímpares.
 
 # ENG version
@@ -39,5 +41,7 @@ All 3 questions are completed, displaying the expected result in the terminal.
 
 ## Functionalities
 Question 1 - Find the largest number in a list of 20 random integers in the range of 1 to 100.
+
 Question 2 - Check if a word provided by the user is a palindrome.
+
 Question 3 - Read a file named "numeros.csv" containing comma-separated integers and return the sum of the odd numbers.
