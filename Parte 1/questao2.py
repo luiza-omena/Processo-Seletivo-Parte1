@@ -9,8 +9,8 @@ def is_reversible(word: str) -> bool:
     reverse = word[::-1]
     if word == reverse:
         return True
-    else:
-        return False
+
+    return False
 
 
 word = input("Escreva uma palavra para verificar se é palíndroma: ")

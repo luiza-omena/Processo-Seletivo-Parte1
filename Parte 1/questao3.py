@@ -6,14 +6,15 @@ def read_file(file: str) -> str:
     with open(file, "r") as numbers:
         return numbers.read()
 
-# Pega a string e a tranforma em uma lista, dividindo por ',' onde será separado
-# e passando cada item da lista pra int
+
+'''Pega a string e a tranforma em uma lista, dividindo por ',' onde será separado
+e passando cada item da lista pra int'''
 
 
 def create_list(string: str) -> list:
-    str_list = string.split(',')
-    str_list = [int(i) for i in str_list]
-    return str_list
+    list = string.split(',')
+    list = [int(i) for i in list]
+    return list
 
 
 def sum_odds(numbers: list) -> int:
